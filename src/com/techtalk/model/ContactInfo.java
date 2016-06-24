@@ -1,4 +1,4 @@
-package techtalk.model;
+package com.techtalk.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

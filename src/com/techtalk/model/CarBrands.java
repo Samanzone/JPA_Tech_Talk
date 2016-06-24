@@ -1,4 +1,4 @@
-package techtalk.model;
+package com.techtalk.model;
 
 /**
  * Created by saman on 9/10/14.

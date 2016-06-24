@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+
+
+<persistence-unit name="PersistenceUnit" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.techtalk.model.Customer</class>
+    <class>com.techtalk.model.Address</class>
+    <class>com.techtalk.model.Check</class>
+    <class>com.techtalk.model.ContactInfo</class>
+    <class>com.techtalk.model.CreditCard</class>
+    <class>com.techtalk.model.CustOrder</class>
+    <class>com.techtalk.model.Item</class>
+    <class>com.techtalk.model.OrderDetail</class>
+    <class>com.techtalk.model.Payment</class>
+    <class>com.techtalk.model.Person</class>
+    <class>com.techtalk.model.Salesman</class>
+    <class>com.techtalk.model.Supplier</class>
+    <class>com.techtalk.model.InternationalAddress</class>
+    <class>com.techtalk.model.Dog</class>
+    <class>com.techtalk.model.PersonDog</class>
+    <class>com.techtalk.model.EquipId</class>
+    <class>com.techtalk.model.Equipment</class>
+    <class>com.techtalk.model.Email</class>
+
+
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+    <properties>
+        <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/JPA_TT"/>
+        <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+        <property name="hibernate.connection.username" value="root"/>
+        <property name="hibernate.connection.password" value="root"/>
+        <property name="hibernate.format_sql" value="true"/>
+        <property name="hbm2ddl.auto" value="create"/>
+
+    </properties>
+</persistence-unit>
+
+
+</persistence>
+
+
+
+
+
+
+
